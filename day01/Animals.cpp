@@ -71,4 +71,6 @@ int main(){
 
     cout << "Model: " << car.model << endl;
     cout << "Fiyat: " << car.price << endl;
+
+    
 }
