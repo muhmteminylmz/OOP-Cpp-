@@ -3,16 +3,24 @@
 using namespace std;
 
 class Car{
-/*
-
-2 public deg
-2 private deg
-2 fonk 1 pr 1 pub
-
-getter setter methodlar
-
-*/
     public:
+
+        Car(string model,string price){
+            this->model = model;
+            this->price = price;
+
+            cout << "Araba Olusturuldu." << endl; 
+        }
+
+        ~Car(){//destructor isimiz bittikten sonra memory de yer kaplamamasi icin class degiskenlerini siler
+
+
+
+            cout << "Araba Yok Edildi." << endl;
+        }
+
+
+
         string model = "BMW";
 
         int hiz = 54;
@@ -54,16 +62,16 @@ getter setter methodlar
 };
 
 int main(){
-    Car car;
+    Car car("Mercedes","8556220");
 
-    cout << car.getId() << endl;
-    cout << car.getPlaka() << endl;
+    cout << "Id: " << car.getId() << endl;
+    cout << "Plaka: " << car.getPlaka() << endl;
 
     car.setId(12);
     car.setPlaka("67 KP 653");
 
-    cout << car.getId() << endl;
-    cout << car.getPlaka() << endl;
+    cout << "Id: " << car.getId() << endl;
+    cout << "Plaka: " << car.getPlaka() << endl;
 
     cout << "hiz: " << car.hiz << endl;
     car.hizArttir(54);   
