@@ -9,12 +9,10 @@ class Car{
             this->model = model;
             this->price = price;
 
-            cout << "Araba Olusturuldu." << endl; 
+            cout << "Araba Olusturuldu." << endl;  
         }
 
         ~Car(){//destructor isimiz bittikten sonra memory de yer kaplamamasi icin class degiskenlerini siler
-
-
 
             cout << "Araba Yok Edildi." << endl;
         }
@@ -68,7 +66,7 @@ int main(){
     cout << "Plaka: " << car.getPlaka() << endl;
 
     car.setId(12);
-    car.setPlaka("67 KP 653");
+    car.setPlaka("68 KP 653");
 
     cout << "Id: " << car.getId() << endl;
     cout << "Plaka: " << car.getPlaka() << endl;
