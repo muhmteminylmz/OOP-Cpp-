@@ -1,0 +1,7 @@
+en son olusan cons ilk yikilir
+fonk parametresine class atarsak fonksiyon bittiginde destr i cagrilir fakat basladiginda cons cagrilmaz
+fonk da nesne return edincede gene cons calismadan bitince dest calisir
+copy cons cagrildiginda yapici cagrilmaz sadece copy cons un ici calisir cunku
+amac nesneyi degil o anki durumu degistirmek ve fonksiyona gonderilmesini saglamaktir.Ancak fonksiyon bittiginde destructor cagrilacaktir
+cunku yok olmasi sirasinda gerceklestirmesi gerekebilir.(ayrilan bellek yerlerini serbest birakmak gibi)
+fakat bu bazi sorunlara neden olabilir.Bunun icin copy cons kullanilir
