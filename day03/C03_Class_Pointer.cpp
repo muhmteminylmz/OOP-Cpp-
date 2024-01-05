@@ -17,7 +17,6 @@ int main() {
     samp *p;
     p=ob;
     for(_i=0;_i<4;_i++){
-
         cout << p -> get_a() << ' ';
         cout << p -> get_b() << '\n';
         cout << p << '\n';

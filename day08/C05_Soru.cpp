@@ -1,3 +1,17 @@
-//
-// Created by rizel on 12/15/2023.
-//
+#include <iostream>
+
+using namespace std;
+
+class list{
+public:
+
+    virtual void store();
+    virtual void retrieve();
+};
+
+
+
+int main(){
+
+
+}

@@ -13,6 +13,11 @@ public:
     Car(string model,int price){
         this->model = model;
         this->price = price;
+        /*
+        model = model1;
+        price = price1;
+        this kullanmadan private icindeki degiskenlerle
+         */
 
     }
     Car(){

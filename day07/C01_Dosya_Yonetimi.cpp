@@ -3,24 +3,39 @@
 
 using namespace std;
 
-int main(){
-    ofstream fout("test");
+int main(int argc,char *argv[]) {
 
-    fout <<"Avrasya\n";
-    fout << 100 << ' ' << hex << 100 << endl;
+    if(argc != 2){
+        cout << "WRITE filename\n";
+        return 1;
+    }
+
+    ofstream fout(argv[1]);
+    char str[80];
+    cout <<"yazilanlar kayit ediliyor durmak icin $ yaziniz\n";
+    do{
+        cout << ":";
+        cin >> str;
+        fout << str << endl;
+    } while (*str!='$');
+
     fout.close();
 
-    ifstream fin("test");
-    char str[80];
+    /*fout << "Avrasya Trabzon\n";//dosyaya yazdiriyoruz
+    fout << 100 << endl;
+    fout.close();
+
+    ifstream fin("test");//dosyadan biseyler alip degiskenlere atiyoruz
+    char str(80);
     int i;
-    fin >> str;
 
-    cout << str << ' ' << i << endl;
-
+    while (fin.get(str)) {
+    cout << str;
+}
     fin.close();
 
 
-
+*/
 
     return 0;
 }

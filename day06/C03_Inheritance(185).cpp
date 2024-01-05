@@ -14,7 +14,7 @@ public:
 class D1 : public B1{
     int b;
 public:
-    D1 (int x,int y) : B1(y) {b=x;};
+    D1 (int x,int y) : B1(y) {b=x;}; //eger B1 in parametresi olasaydi boyle gostermezdik
     int get_b(){return b;}
 
 };

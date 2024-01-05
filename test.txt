@@ -1,6 +1,4 @@
 araba
-geliyor
-ama
-biraz
-bekle
+car
+acsadas
 $

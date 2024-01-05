@@ -23,9 +23,11 @@ void fiyatGoster(Car car){
 }
 
 Car nesneDondur(Car car){
+    //nesne parametre olarak girildiginde ve fonk bittiginde destructor calisir
     car.model = "Mercedes";
     car.price = 50000;
     return car;
+    //nesne return edince destructor calisir
 }
 /*
 
@@ -42,9 +44,15 @@ int main(){
     cout << "Model: " << car2.model << endl;
     cout << "Fiyat: " << car2.price << endl;
 
+    cout << "-------------------------------\n";
+
+
     fiyatGoster(car1);
 
+    cout << "-------------------------------\n";
+
     car2 = nesneDondur(car1);
+    //nesne return edince destructor calisir
     /*
      Destructor in tekrar calimsasinin sebebi
      */
