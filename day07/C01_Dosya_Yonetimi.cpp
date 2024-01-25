@@ -19,23 +19,24 @@ int main(int argc,char *argv[]) {
         fout << str << endl;
     } while (*str!='$');
 
-    fout.close();
+//    fout.close();
 
-    /*fout << "Avrasya Trabzon\n";//dosyaya yazdiriyoruz
+    fout << "Avrasya Trabzon\n";//dosyaya yazdiriyoruz
     fout << 100 << endl;
     fout.close();
 
     ifstream fin("test");//dosyadan biseyler alip degiskenlere atiyoruz
-    char str(80);
+    char str2(80);
     int i;
 
-    while (fin.get(str)) {
-    cout << str;
+    while (fin.get(str2)) {
+    cout << str2;
+
 }
     fin.close();
 
 
-*/
+
 
     return 0;
 }

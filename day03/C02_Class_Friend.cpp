@@ -14,7 +14,6 @@ public:
     }
 };
 
-
 int isFactor(myclass ob){
     if(!(ob.n % ob.d)) return 1; //fonksiyon class icinde olmamasina ragmen private degerlere erisebildi.
     else return 0;

@@ -88,39 +88,6 @@ public:
            return Anket(0);
        }
 
-
-        /*Anket(Anket&& other){//move sematikleri kopyalama yapmadan direkt yeni objeye deger atamasi icin kullanilir
-            //ilgili adres ve boyutu aldık
-            anket_option_count = other.anket_option_count;
-            anket_option_list = other.anket_option_list;
-
-            //kaynak isaretcisi icin adreslenen kaynagi biraktik
-            //bu olmassa bellek fazla bosaltma yapar
-            other.anket_option_count = 0;
-            other.anket_option_list = nullptr;
-
-        }
-
-        Anket& operator=(Anket&& assign){
-
-            if (this != &assign)
-            {
-                // Mevcut verileri boşalt
-                delete[] anket_option_list;
-
-                // Gelen veri işaretçisinden ilgili adresi ve boyutu aliyoruz
-                anket_option_list = assign.anket_option_list;
-                anket_option_count = assign.anket_option_count;
-
-                //kaynak isaretcisi icin adreslenen kaynagi biraktik
-                //bu olmassa bellek fazla bosaltma yapar (move consta olandan)
-                assign.anket_option_list = nullptr;
-                assign.anket_option_count = 0;
-            }
-            return *this;
-
-        }*/
-
        Anket myTemp(anket_option_count);
 
        for(int i=0; i<anket_option_count; i++){
@@ -128,30 +95,8 @@ public:
        }
         return myTemp;
 
-       /*int count =0;
-        int k = ob.getAnketCount()-1;
-        bool b1 = false;
-
-        for(int i=0; i<ob.getAnketCount(); i++){
-
-            for(int j=count; j< k;j++){
-                if(anket_option_list[i] == ob.anket_option_list[j] && i!=j){
-                    myTemp.anket_option_list[count] = ob.anket_option_list[i]*2;
-                    b1 = true;
-                    break;
-                }
-
-            }
-            if(b1) {
-                myTemp.anket_option_list[count] = ob.anket_option_list[i];
-                b1 = false;
-            }
-            count++;
-            k--;
-
-        }*/
-
     }
+
     //direkt cout icin operator asiri yukledik boylece cout << kullaninca ne olacagini belirliyoruz
     friend ostream& operator<<(ostream& out, Anket& ob){ // ostream& icin internetten yardim aldim.
         out << "[";
@@ -177,12 +122,7 @@ public:
         return *this;
     }
 
-
-
 };
-
-
-
 
 int main() {
     Anket ob(5),ob2(5),ob3(6);

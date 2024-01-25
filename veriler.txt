@@ -1,0 +1,7 @@
+Ogrenci,Ali,Can,123
+Ogrenci,Ayse,Yilmaz,456
+Ders,Matematik,101
+Ders,Fizik,202
+Not,123,101,85.5
+Not,456,101,78
+Not,123,202,90

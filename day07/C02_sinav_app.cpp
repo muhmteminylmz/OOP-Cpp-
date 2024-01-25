@@ -61,7 +61,7 @@ public:
 
 class Sinav{
 protected:
-    int sinav_count,*sinav_result;
+    int sinav_count=0,*sinav_result;
     string *sinav_list;
 
 public:

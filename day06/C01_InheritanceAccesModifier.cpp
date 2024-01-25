@@ -32,7 +32,7 @@ class Derived2 : protected Derived{
 
 public:
     void setz(int c,int VarX,int VarY){z=c; setx(VarX);sety(VarY,VarX);}
-    void showz(){cout << z << endl; showy();}
+    void showz(){ cout << z << endl; showy();}
 };
 
 

@@ -9,7 +9,7 @@ Yalnızca bir tamsayı argümanı olduğunda ve eğer argüman sayısal bir pali
 Yalnızca bir C-string (karakter dizisi) argüman olduğunda karakter disizi olarak bir palindrom ise fonksiyon true değerini döndürür.
 İki C-string argümanı olduğunda, birbirine birleştirilen iki dize bir palindrom ise işlev true değerini döndürür (test etmek için aslında iki dizeyi birleştirmeniz gerekmediğini unutmayın). Fonksiyonlarınızı test etmek için bir ana program yazın.(20)
 
- */
+*/
 bool palindrom_control(string s) {
     for (int i = 0; i < s.length(); i++) {
         if (s[i] != s[s.length() - 1 - i]) {

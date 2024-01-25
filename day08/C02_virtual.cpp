@@ -27,7 +27,7 @@ public:
   }
 };
  //* bu asil polymorphism dir.Hem fazla fonksiyon yazmayiz ve nesneden nesneye fonksiyon kullanimi degisir
- //* ornegin kara icin farkli ucgen icin farkli calisir
+ //* ornegin kare icin farkli ucgen icin farkli calisir
 
 int main(){
 
