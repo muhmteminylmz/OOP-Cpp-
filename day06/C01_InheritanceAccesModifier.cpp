@@ -42,7 +42,9 @@ int main(){
     Derived ob;
 
     ob.sety(20,1000);
+    //ob.setx();
 
     ob.showy();
+
 
 }

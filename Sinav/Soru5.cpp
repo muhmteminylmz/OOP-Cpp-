@@ -28,7 +28,7 @@ public:
         for(int i=0; i<anket_option_count; i++){
             anket_option_list[i] = 0;
         }
-    };
+    }
     ~Anket(){delete[] anket_option_list;}
 
     Anket(const Anket& copy){
